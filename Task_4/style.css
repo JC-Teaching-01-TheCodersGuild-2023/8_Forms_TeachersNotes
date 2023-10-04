@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: bisque;
+    width: 50dvw;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: center;
+}
+
+.formInputs div {
+    padding: 3rem;
+}
+
+.formInputs div input {
+    min-width: 18vw;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: aquamarine;
+    width: 40vw;
+    margin: 20px auto;
+    font-size: 2rem;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(59, 252, 188);
+    color: grey;
+}
+
+#mail label, #mail input {
+    display: inline;
+    min-width: 5vw;
+}
+
+
+
+input[required] {
+    border: 1px solid firebrick;
+}
