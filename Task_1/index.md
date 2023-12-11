@@ -1,7 +1,7 @@
-- Username <span style="color:red"> - text</span>
-- Email address <span style="color:red"> - email</span>
-- Password <span style="color:red"> - password</span>
-- Telephone number <span style="color:red"> - text</span>
-- Date of birth <span style="color:red"> - date</span>
-- Mailing list signup <span style="color:red"> - radio</span>
-- Star sign <span style="color:red"> - select</span>
+- Username <span style='color:red'> - text</span>
+- Email address <span style='color:red'> - email</span>
+- Password <span style='color:red'> - password</span>
+- Telephone number <span style='color:red'> - text</span>
+- Date of birth <span style='color:red'> - date</span>
+- Mailing list signup <span style='color:red'> - radio</span>
+- Star sign <span style='color:red'> - select</span>
