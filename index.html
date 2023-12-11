@@ -13,7 +13,7 @@
       
       <!-- Share the CDN with the class & ask them to think what they could use to improve their forms i.e. bootstrap -->
       
-      <h2>Demo 1</h2>
+      <!-- <h2>Demo 1</h2>
       <form action='#'>
  
         <label for='name'>Text:</label>
@@ -36,7 +36,7 @@
         <textarea id='question' name='question' placeholder='some text'></textarea>
         
         <input type='submit'>  
-      </form>
+      </form> -->
 
       <!-- <h2>Demo 2</h2>
         <form action='#'>
@@ -85,7 +85,7 @@
         </select>
 
         <h3>validation</h3>
-        <input type='email' name='example' id='example' required>
+        <input type='number' maxlength="5" name='example' id='example' required>
         <input type='submit'>
       </form> -->
 
@@ -94,6 +94,11 @@
         <h3>Login</h3>
         <input type='text' id='username' class='form-control' placeholder='Enter your Username...'>
         <input type='password' id='password' class='form-control' placeholder='Enter your Password...'>
+        <select name='options' id="options">
+          <option value='1'>Super</option>
+          <option value='2'>Highly</option>
+          <option value='3'>Low</option>
+        </select>
         <button type='submit'>Submit</button>
       </form>
       <script>
@@ -104,15 +109,16 @@
 
           let username = document.getElementById('username').value;
           let password = document.getElementById('password').value;
+          let select = document.getElementById('options').value;
 
-          console.log('username:', username, 'password:', password);
+          console.log('username:', username, 'password:', password, 'select', select);
 
           username.value = '';
           password.value = '';
         });
       </script> -->
 
-      <!-- <h2>Demo 6</h2>
+      <h2>Demo 6</h2>
       <a href='https://youtube.com/shorts/HFMfn_XBdyo?si=L8ita-eeViqmZt3u'>Example of how to create form on Netlify</a>
       <form name='example' netlify>
         <h3>Details</h3>
@@ -121,6 +127,6 @@
         <label for='surName'>SurName</label>
         <input type='text' id='surName' name='surName'>
         <button type='submit'>Submit</button>
-      </form> -->
+      </form>
   </body>
 </html>
