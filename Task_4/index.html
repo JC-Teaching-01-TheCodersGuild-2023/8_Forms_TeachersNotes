@@ -10,7 +10,7 @@
   </head>
   <body>        
     <h1>Task 4 - Styling</h1>
-    <form action="#">
+    <form action="#" id="task4">
       <section class="formInputs">
         <div class="leftSide">
           <label for="username">Username</label>
@@ -35,7 +35,7 @@
             <label for="yes">Yes</label>
               <input type="radio" id="yes" name="mail" value="yes">
             <label for="no">No</label>
-              <input type="radio" id="no" name="mail" value="no">
+              <input type="radio" id="no" name="mail" value="no" checked>
           </fieldset>
     
           <label for="star">Star sign</label>
@@ -54,5 +54,21 @@
       </section>
       <input type="submit" value="Submit">
     </form>
+
+    <script>
+      const task4Form = document.getElementById('task4')
+      task4Form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formElements = task4Form.elements;
+          const inputs = {};
+          
+          for (let i=0; i < 9; i++) {
+            // FIX - Radio not working correct
+            inputs[formElements[i].name] = formElements[i].value;
+            formElements[i].value = ''
+          }
+          console.log(inputs);
+        });
+    </script>
   </body>
 </html>
