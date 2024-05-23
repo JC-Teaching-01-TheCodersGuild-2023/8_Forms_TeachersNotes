@@ -125,7 +125,7 @@
       </select>
     </form> -->
 
-    <h2>Demo 4</h2>
+    <!-- <h2>Demo 4</h2>
     <form action="#">
       <h3>select</h3>
       <label for="options">DropDown:</label>
@@ -139,55 +139,74 @@
       <label for="example">number:</label>
       <input type="number" max="5" name="example" id="example" required />
       <input type="submit" />
-    </form>
+    </form> -->
 
     <!-- <h2>Demo 5</h2>
-      <form action='' id='loginForm'>
-        <h3>Login</h3>
-        
-        <label for='username'>UserName:</label>
-        <input type='text' id='username' class='form-control' placeholder='Enter your Username...'>
-        
-        <label for='password'>Password:</label>
-        <input type='password' id='password' class='form-control' placeholder='Enter your Password...'>
-        
-        <label for='options'>Favourite Colour:</label>
-        <select name='options' id="options">
-          <option value='1'>Blue</option>
-          <option value='2'>Green</option>
-          <option value='3'>Red</option>
-        </select>
+    <form action="" id="loginForm">
+      <h3>Login</h3>
 
-        <button type='submit'>Submit</button>
-      </form>
-      <script>
-        document.getElementById("options").selectedIndex = -1;
-        let loginForm = document.getElementById('loginForm');
+      <label for="username">UserName:</label>
+      <input
+        type="text"
+        id="username"
+        class="form-control"
+        placeholder="Enter your Username..."
+      />
 
-        loginForm.addEventListener('submit', (e) => {
-          e.preventDefault();
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        class="form-control"
+        placeholder="Enter your Password..."
+      />
 
-          let username = document.getElementById('username').value;
-          let password = document.getElementById('password').value;
-          let select = document.getElementById('options').value;
+      <label for="options">Favourite Colour:</label>
+      <select name="options" id="options">
+        <option value="1">Blue</option>
+        <option value="2">Green</option>
+        <option value="3">Red</option>
+      </select>
 
-          console.log('username:', username, 'password:', password, 'select', select);
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      document.getElementById("options").selectedIndex = -1;
+      let loginForm = document.getElementById("loginForm");
 
-          document.getElementById('username').value = '';
-          document.getElementById('password').value = '';
-          document.getElementById('options').value = '';
-        });
-      </script> -->
+      loginForm.addEventListener("submit", (e) => {
+        // e.preventDefault();
 
-    <!-- <h2>Demo 6</h2>
-      <a href='https://youtube.com/shorts/HFMfn_XBdyo?si=L8ita-eeViqmZt3u'>Example of how to create form on Netlify</a>
-      <form name='example' netlify>
-        <h3>Details</h3>
-        <label for='foreName'>ForeName</label>
-        <input type='text' id='foreName' name='foreName'>
-        <label for='surName'>SurName</label>
-        <input type='text' id='surName' name='surName'>
-        <button type='submit'>Submit</button>
-      </form> -->
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let select = document.getElementById("options").value;
+
+        console.log(
+          "username:",
+          username,
+          "password:",
+          password,
+          "select",
+          select
+        );
+
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("options").value = "";
+      });
+    </script> -->
+
+    <h2>Demo 6</h2>
+    <a href="https://youtube.com/shorts/HFMfn_XBdyo?si=L8ita-eeViqmZt3u"
+      >Example of how to create form on Netlify</a
+    >
+    <form name="example" netlify>
+      <h3>Details</h3>
+      <label for="foreName">ForeName</label>
+      <input type="text" id="foreName" name="foreName" />
+      <label for="surName">SurName</label>
+      <input type="text" id="surName" name="surName" />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
